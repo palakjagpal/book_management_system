@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Add Books-Book Management System</title>
+</head>
+<body>
+    <h1>Welcome to the Book Management System</h1>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="/books">View Books</a></li>
+            <li><a href="/users">View users</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="/books/addBooks" class="active">Add Books</a></li>
+            <li><a href="/users/addUsers">Add users</a></li>
+        </ul>
+    </nav>
+
+    <h2>Add a New Book</h2>
+    <form action="/books/addbooks" method="POST">
+        <input type="text" name="bookName" placeholder="Book Name" required />
+        <input type="text" name="author" placeholder="Author" required />
+        <input type="text" name="genre" placeholder="Genre" required />
+        <input type="text" name="year" placeholder="Year" required />
+        <button type="submit">ADD</button>
+    </form>
+</body>
+</html>
